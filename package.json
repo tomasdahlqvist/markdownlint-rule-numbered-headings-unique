@@ -36,7 +36,7 @@
 		"eslint": "9.21.0",
 		"markdownlint-cli2": "^0.17.2"
 	},
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.js",
 	"directories": {
 		"test": "test"

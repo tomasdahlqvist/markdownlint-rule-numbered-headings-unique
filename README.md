@@ -109,7 +109,6 @@ and tests before submitting.
 
 MIT
 
-[markdownlint]: [https://github.com/DavidAnson/markdownlint]
-[vscode-markdownlint]: [https://marketplace.visualstudio.com/items?itemName=
-DavidAnson.vscode-markdownlint]
-[MD024]: [https://github.com/DavidAnson/markdownlint/blob/main/doc/md024.md]
+[markdownlint]: <https://github.com/DavidAnson/markdownlint>
+[vscode-markdownlint]: <https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>
+[MD024]: <https://github.com/DavidAnson/markdownlint/blob/main/doc/md024.md>

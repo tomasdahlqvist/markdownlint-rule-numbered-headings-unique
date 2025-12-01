@@ -16,6 +16,8 @@ jobs:
     - uses: JustinBeckwith/linkinator-action@v1.11.0
       with:
         paths: '*.md'
+        concurrency: 1
+        retry: 3
 
   check-spelling:
     runs-on: ubuntu-latest

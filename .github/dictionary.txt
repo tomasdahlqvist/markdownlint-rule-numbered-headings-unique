@@ -4,3 +4,6 @@ markdownlint
 markdownlint-rule-numbered-headings-unique
 README
 YAML
+markdownlint-cli
+markdownlint-cli2
+MD024
