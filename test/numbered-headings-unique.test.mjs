@@ -6,9 +6,9 @@ import numberedHeadingsUnique from "../numbered-headings-unique.cjs";
 import { main as cli2 } from "markdownlint-cli2";
 
 const numberedViolations = [
-  'numbered-headings-unique-violations.md:5 numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "1" is not unique in the document.]',
-  'numbered-headings-unique-violations.md:11 numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 999" is not unique in the document.]',
-  'numbered-headings-unique-violations.md:31 numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 42" is not unique in the document.]',
+  'numbered-headings-unique-violations.md:5 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "1" is not unique in the document.]',
+  'numbered-headings-unique-violations.md:11 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 999" is not unique in the document.]',
+  'numbered-headings-unique-violations.md:31 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 42" is not unique in the document.]',
 ];
 const customRules = [ numberedHeadingsUnique ];
 const paramsBase = {

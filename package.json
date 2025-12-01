@@ -33,10 +33,10 @@
 	],
 	"devDependencies": {
 		"@eslint/js": "9.21.0",
-		"eslint": "9.21.0",
-		"markdownlint-cli2": "^0.17.2"
+		"eslint": "^9.39.1",
+		"markdownlint-cli2": "^0.19.1"
 	},
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"main": "index.js",
 	"directories": {
 		"test": "test"

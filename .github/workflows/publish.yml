@@ -28,9 +28,5 @@ jobs:
       - name: Run tests
         run: npm test
 
-      # Ensure npm 11.5.1 or later is installed
-      - name: Update npm
-        run: npm install -g npm@latest
-      - run: npm ci
-      - run: npm test
-      - run: npm publish
+      - name: Publish to npm
+        run: npm publish --provenance --access public
