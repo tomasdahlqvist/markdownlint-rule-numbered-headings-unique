@@ -1,0 +1,44 @@
+{
+	"name": "markdownlint-rule-numbered-headings-unique",
+	"description": "A markdownlint rule that requires that headings ending in numbers are uniquely numbered",
+	"license": "MIT",
+	"author": "Tomas Dahlqvist",
+	"repository": {
+		"type": "git"
+	},
+	"homepage": "https://github.com/TomasDahlqvist/markdownlint-rule-numbered-headings-unique#readme",
+	"bugs": {
+		"url": "https://github.com/TomasDahlqvist/markdownlint-rule-numbered-headings-unique/issues"
+	},
+	"funding": {
+		"url": "https://github.com/sponsors/TomasDahlqvist"
+	},
+	"exports": "./numbered-headings-unique.cjs",
+	"scripts": {
+		"lint": "markdownlint-cli2 *.md && eslint --max-warnings 0",
+		"test": "npm run lint && node --test --experimental-test-coverage"
+	},
+	"files": [
+		"package.json",
+		"LICENSE",
+		"README.md",
+		"numbered-headings-unique.cjs"
+	],
+	"keywords": [
+		"markdownlint-rule",
+		"markdownlint",
+		"markdown",
+		"headings",
+		"lint"
+	],
+	"devDependencies": {
+		"@eslint/js": "9.21.0",
+		"eslint": "9.21.0",
+		"markdownlint-cli2": "^0.17.2"
+	},
+	"version": "1.0.0",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	}
+}
