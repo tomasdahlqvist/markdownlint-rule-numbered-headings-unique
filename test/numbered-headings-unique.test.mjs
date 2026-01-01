@@ -2,7 +2,7 @@
 
 import assert from "node:assert";
 import test from "node:test";
-import numberedHeadingsUnique from "../numbered-headings-unique.cjs";
+import numberedHeadingsUnique from "../index.cjs";
 import { main as cli2 } from "markdownlint-cli2";
 
 const numberedViolations = [

@@ -1,12 +1,11 @@
 "use strict";
 
 /** @type import("markdownlint").Rule */
-module.exports = {
-  "names": ["numbered-headings-unique"],
-  "description": "Headings ending in a number must be unique in the document",
-  "tags": ["headings", "headers", "numbers", "unique"],
+const rule = {
+  names: ["numbered-headings-unique"],
+  description: "Headings ending in a number must be unique in the document",
+  tags: ["headings", "headers", "numbers", "unique"],
   function(params, onError) {
-
     // Track seen heading numbers: text -> [lineNumbers]
     const seenNumbers = new Map();
     params.tokens.forEach((token, idx) => {
@@ -26,7 +25,6 @@ module.exports = {
         }
       }
     });
-
     // Report all duplicates (all but the first occurrence)
     for (const [text, lines] of seenNumbers.entries()) {
       if (lines.length > 1) {
@@ -40,3 +38,5 @@ module.exports = {
     }
   }
 };
+
+module.exports = [rule];

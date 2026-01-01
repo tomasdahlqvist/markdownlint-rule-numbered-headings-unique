@@ -1,6 +1,6 @@
 {
 	"customRules": [
-		"./numbered-headings-unique.cjs"
+		"./index.cjs"
 	],
 	"config": {
 		"MD024": { "siblings_only": true }

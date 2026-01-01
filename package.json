@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/TomasDahlqvist/markdownlint-rule-numbered-headings-unique/issues"
 	},
-	"exports": "./numbered-headings-unique.cjs",
+	"exports": "./index.cjs",
 	"scripts": {
 		"lint": "markdownlint-cli2 *.md && eslint --max-warnings 0",
 		"test": "npm run lint && node --test --experimental-test-coverage"
@@ -20,7 +20,7 @@
 		"package.json",
 		"LICENSE",
 		"README.md",
-		"numbered-headings-unique.cjs"
+		"index.cjs"
 	],
 	"keywords": [
 		"markdownlint-rule",
