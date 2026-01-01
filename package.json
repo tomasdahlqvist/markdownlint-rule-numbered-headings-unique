@@ -34,8 +34,8 @@
 		"eslint": "^9.39.1",
 		"markdownlint-cli2": "^0.19.1"
 	},
-	"version": "1.0.5",
-	"main": "index.js",
+	"version": "1.0.6",
+	"main": "index.cjs",
 	"directories": {
 		"test": "test"
 	}

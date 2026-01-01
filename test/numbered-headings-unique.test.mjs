@@ -10,7 +10,7 @@ const numberedViolations = [
   'numbered-headings-unique-violations.md:11 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 999" is not unique in the document.]',
   'numbered-headings-unique-violations.md:31 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 42" is not unique in the document.]',
 ];
-const customRules = [ numberedHeadingsUnique ];
+const customRules = numberedHeadingsUnique;
 const paramsBase = {
   "argv": [ "numbered-headings-unique-violations.md" ],
   "directory": "test",
