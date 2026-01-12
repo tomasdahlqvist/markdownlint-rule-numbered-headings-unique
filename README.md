@@ -62,16 +62,14 @@ npm install --save-dev markdownlint-rule-numbered-headings-unique
 
 ## Usage
 
-
 ### With markdownlint-cli
 
-
-If installed locally, markdownlint will auto-discover the rule by package name. You can use:
+If installed locally, markdownlint will auto-discover the rule by package name.
+You can use:
 
 ```sh
 markdownlint --rules markdownlint-rule-numbered-headings-unique *.md
 ```
-
 
 If you want to use a direct path, you can still use:
 
@@ -81,8 +79,8 @@ markdownlint --rules ./index.cjs *.md
 
 ### With markdownlint-cli2
 
-
-If installed locally, markdownlint-cli2 will auto-discover the rule by package name. You can add it to your config file using the package name:
+If installed locally, markdownlint-cli2 will auto-discover the rule by package
+name. You can add it to your config file using the package name:
 
 ```jsonc
 {
@@ -111,7 +109,10 @@ To use a direct path, you can still reference index.cjs if needed:
 
 ### With VS Code
 
-If using the [`markdownlint` extension for VS Code][vscode-markdownlint], install this package in your workspace and the rule will be auto-discovered. For advanced usage, see the markdownlint-cli2 examples above or refer to the extension documentation.
+If using the [`markdownlint` extension for VS Code][vscode-markdownlint],
+install this package in your workspace and the rule will be auto-discovered.
+For advanced usage, see the markdownlint-cli2 examples above or refer to the
+extension documentation.
 
 ## Testing
 
