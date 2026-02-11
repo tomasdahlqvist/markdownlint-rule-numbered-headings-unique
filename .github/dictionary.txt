@@ -7,3 +7,4 @@ YAML
 markdownlint-cli
 markdownlint-cli2
 MD024
+config
