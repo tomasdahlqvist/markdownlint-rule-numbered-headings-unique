@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": ["project-words"],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": ".github/dictionary.txt",
+      "addWords": true
+    }
+  ],
+  "files": [
+    "**/*.md"
+  ]
+}

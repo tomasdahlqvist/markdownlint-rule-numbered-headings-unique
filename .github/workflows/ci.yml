@@ -23,10 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: tbroadley/spellchecker-cli-action@v1
+    - uses: actions/setup-node@v4
       with:
-        dictionaries: '.github/dictionary.txt'
-        files: '*.md'
+        node-version: current
+    - run: npm ci
+    - run: npx cspell --config .cspell.json '**/*.md'
 
   run-tests:
     runs-on: ubuntu-latest
