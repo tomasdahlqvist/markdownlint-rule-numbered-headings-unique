@@ -103,9 +103,16 @@ npm test
 
 ## Contributing
 
-Pull requests and issues are welcome! Please ensure your code passes linting and tests before submitting.
+Pull requests and issues are welcome!
+Please ensure your code passes linting and tests before submitting.
 
 ## Changelog
+
+### 1.2.0
+
+#### New Features
+
+The numbered headings keeps the number of digits in a heading by padding with leading zeros.
 
 ### 1.1.0
 

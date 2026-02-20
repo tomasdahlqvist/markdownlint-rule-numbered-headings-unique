@@ -9,7 +9,7 @@ import numberedHeadingsUnique from "../index.cjs";
 import { main as cli2 } from "markdownlint-cli2";
 
 const numberedViolations = [
-  'numbered-headings-unique-violations.md:5 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "1" is not unique in the document.]',
+  'numbered-headings-unique-violations.md:5 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "001" is not unique in the document.]',
   'numbered-headings-unique-violations.md:11 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 999" is not unique in the document.]',
   'numbered-headings-unique-violations.md:31 error numbered-headings-unique Headings ending in a number must be unique in the document [Heading number "Test 42" is not unique in the document.]',
 ];
@@ -57,12 +57,12 @@ test("fix replaces duplicate numbers with incremented values", async () => {
     const lines = fixed.split(/\r?\n/u);
     
     // Verify the fixes
-    assert.equal(lines[4], "## 2", "First duplicate '1' should become '2'");
+    assert.equal(lines[4], "## 002", "First duplicate '001' should become '002'");
     assert.equal(lines[10], "## Test 1000", "First duplicate 'Test 999' should become 'Test 1000'");
     assert.equal(lines[30], "### Test 1001", "First duplicate 'Test 42' should become 'Test 1001' (global max for 'Test ' prefix)");
     
     // Verify non-duplicates are unchanged
-    assert.equal(lines[2], "## 1", "First occurrence of '1' should remain unchanged");
+    assert.equal(lines[2], "## 001", "First occurrence of '001' should remain unchanged");
     assert.equal(lines[8], "## Test 999", "First occurrence of 'Test 999' should remain unchanged");
     assert.equal(lines[22], "### Test 42", "First occurrence of 'Test 42' should remain unchanged");
   } finally {

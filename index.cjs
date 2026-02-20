@@ -61,7 +61,7 @@ const rule = {
             fixInfo: {
               editColumn: numberStartColumn,
               deleteCount: oldNum.length,
-              insertText: num.toString(),
+              insertText: num.toString().padStart(oldNum.length, "0"),
             },
           });
         });
